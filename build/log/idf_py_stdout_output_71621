@@ -1,0 +1,138 @@
+p staESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048841
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2d98
+entry 0x403c8914
+[0;32mI (26) boot: ESP-IDF v5.3-dev-1724-ga5b261f699-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Feb  7 2024 19:57:25[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (36) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0d480h ( 54400) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0001d4a8 vaddr=3fc92100 size=0299ch ( 10652) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=0001fe4c vaddr=40374000 size=001cch (   460) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=19e10h (106000) map[0m
+[0;32mI (146) esp_image: segment 4: paddr=00039e38 vaddr=403741cc size=0ded8h ( 57048) load[0m
+[0;32mI (164) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (165) boot: Disabling RNG early entropy source...[0m
+[0;32mI (176) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (185) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (186) cpu_start: Application information:[0m
+[0;32mI (188) cpu_start: Project name:     udemy_esp32_app[0m
+[0;32mI (194) cpu_start: App version:      1[0m
+[0;32mI (198) cpu_start: Compile time:     Feb  7 2024 19:57:12[0m
+[0;32mI (205) cpu_start: ELF file SHA256:  ce56b999d...[0m
+[0;32mI (210) cpu_start: ESP-IDF:          v5.3-dev-1724-ga5b261f699-dirty[0m
+[0;32mI (217) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (222) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (227) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (239) heap_init: At 3FC953F0 len 00054320 (336 KiB): RAM[0m
+[0;32mI (245) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (251) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (257) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (264) spi_flash: detected chip: winbond[0m
+[0;32mI (268) spi_flash: flash io: dio[0m
+[0;33mW (272) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (285) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (292) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (299) main_task: Started on CPU0[0m
+[0;32mI (309) main_task: Calling app_main()[0m
+[0;31mE (309) ledc: ledc_timer_config(619): speed_mode argument is invalid[0m
+[0;31mE (319) ledc: ledc_channel_config(666): speed_mode argument is invalid[0m
+[0;31mE (319) ledc: ledc_channel_config(666): speed_mode argument is invalid[0m
+[0;31mE (329) ledc: ledc_channel_config(666): speed_mode argument is invalid[0m
+[0;31mE (339) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (339) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (349) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (359) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (359) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (369) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (679) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (679) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (679) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (679) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (689) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (699) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (999) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (999) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (999) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (999) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (1009) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (1019) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (1319) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (1319) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (1319) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (1319) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (1329) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (1339) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (1649) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (1649) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (1649) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (1649) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (1659) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (1669) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (1979) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (1979) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (1979) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (1979) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (1989) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (1999) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (2309) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (2309) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (2309) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (2309) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (2319) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (2329) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (2639) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (2639) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (2639) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (2639) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (2649) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (2659) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (2969) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (2969) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (2969) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (2969) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (2979) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (2989) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (3299) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (3299) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (3299) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (3299) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (3309) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (3319) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (3629) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (3629) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (3629) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (3629) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (3639) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (3649) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (3959) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (3959) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (3959) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (3959) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (3969) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (3979) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (4289) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (4289) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (4289) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (4289) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
+[0;31mE (4299) ledc: ledc_set_duty(803): speed_mode argument is invalid[0m
+[0;31mE (4309) ledc: ledc_update_duty(729): speed_mode argument is invalid[0m
