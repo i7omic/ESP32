@@ -1,0 +1,8 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyACM0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40049ab3: esp_rom_spiflash_read_status in ROM
+[0m
+[0;33m0x40375a74: esp_restart_noos at /home/ilija/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:159
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is 24bc2c517b7b53d01e4e5224db849de483bdfd13fda2e864ca8d72d64b3db6dc[0m
+[0m
